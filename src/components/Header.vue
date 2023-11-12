@@ -44,15 +44,15 @@
 
 .menu {
   flex: 1;
-  font-size: 25px;
-
+  font-size: 1.5rem;
+  /* background-color: aqua; */
   position: relative;
 }
 
 .link {
   color: rgb(25, 50, 160);
   text-decoration: none;
-  transition: .25s ease;
+  transition: .65s ease;
   font-family: 'Tektur', sans-serif;
 }
 
@@ -80,6 +80,8 @@ li {
   top: -100px;
   transform: translateX(-50%);
   animation: dropAnimation 1.5s ease forwards;
+  width: 900px;
+  margin-left: 30%;
 }
 
 @keyframes dropAnimation {
@@ -89,7 +91,7 @@ li {
 }
 
 .main{
-  background-color: rgb(16, 48, 189);
+  background-color: rgb(25, 50, 160);
   width:120%;
   height: 700px;
   margin-left: -10%;
