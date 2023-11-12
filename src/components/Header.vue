@@ -1,71 +1,125 @@
-<!-- Header.vue -->
 <template>
-    <header>
-      <div class="container">
-        <div class="logo">
-          <router-link to="/"><img src="src/assets/cropped-logo_transparent-1.png"></router-link>
-        </div>
-        <nav>
-          <ul>
-            <li><router-link to="/">Home</router-link></li>
-            <!-- Add more navigation links as needed -->
-          </ul>
-        </nav>
+  <div class="header">
+    <div class="logo">
+      <img class="logoimg" src="@/assets/cropped-logo_transparent-1.png" alt="">
+    </div>
+    <div class="menu">
+      <div class="drop">
+        <ul>
+          <li><router-link to="/" class="link">Αρχική</router-link></li>
+          <li><router-link to="/" class="link">Προϊόντα</router-link></li>
+          <li><router-link to="/" class="link">Μηχανογράφιση</router-link></li>
+          <li><router-link to="/" class="link">Επικοινωνία</router-link></li>
+        </ul>
       </div>
-    </header>
-  </template>
+    </div>
+  </div>
+  <div class="main">
+    <img style="width: 30%; padding: 5% 35% ;" src="@/assets/logo_transparent.png" alt="">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+  </div>
+</template>
+
+
+
+
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Tektur&family=Ubuntu&display=swap');
+
+.header {
+  display: flex;
   
-  <script>
-  export default {
-    // You can add component-specific logic here if needed
-  };
-  </script>
-  
-  <style>
-  /* Add styling for your header */
-  header {
-    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
-    color: #fff;
-    padding: 10px 0; /* Adjust the padding as needed */
+}
+
+.logoimg {
+  width: 30%;
+  padding: 0 5%;
+}
+
+.logo {
+  flex: 1;
+}
+
+.menu {
+  flex: 1;
+  font-size: 25px;
+
+  position: relative;
+}
+
+.link {
+  color: rgb(25, 50, 160);
+  text-decoration: none;
+  transition: .25s ease;
+  font-family: 'Tektur', sans-serif;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+li {
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+}
+
+.link:hover {
+  color: rgb(253, 253, 253);
+  font-size: 30px;
+  background-color: rgb(25, 50, 160);
+  border-radius: 5rem;
+  padding: 10%;
+}
+
+.drop {
+  position: absolute;
+  top: -100px;
+  transform: translateX(-50%);
+  animation: dropAnimation 1.5s ease forwards;
+}
+
+@keyframes dropAnimation {
+  to {
+    top: 20%;
   }
+}
+
+.main{
+  background-color: rgb(16, 48, 189);
+  width:120%;
+  height: 700px;
+  margin-left: -10%;
   
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px; /* Set your desired max-width */
-    margin: 0 auto; /* Center the content */
+}
+
+.bubble {
+  position: absolute;
+  width: 30px; /* Adjust bubble size */
+  height: 30px;
+  background-color: #fff; /* Adjust bubble color */
+  border-radius: 50%;
+  animation: moveBubbles 5s linear infinite; /* Adjust animation duration and timing function */
+}
+
+@keyframes moveBubbles {
+  0% {
+    transform: translate(0, 0);
   }
-  
-  .logo {
-    font-size: 1.5rem; /* Adjust the font size */
+  25% {
+    transform: translate(700px, -100px); /* Adjust the path of the bubble movement */
   }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
+  50% {
+    transform: translate(900px, 0);
   }
-  
-  nav li {
-    margin-right: 20px;
+  75% {
+    transform: translate(200px, 100px);
   }
-  
-  nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+  100% {
+    transform: translate(0, 0);
   }
-  
-  /* Media query for responsiveness */
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    nav {
-      margin-top: 10px;
-    }
-  }
-  </style>
-  
+}
+</style>
