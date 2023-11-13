@@ -26,15 +26,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Tektur&family=Ubuntu&display=swap');
 
 .main {
-    background-color: #0B409C;
+    /* background-color: #0B409C; */
+    background: linear-gradient(to right, #1258c9 30%, #0B409C 70%); 
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-rows: 50% 50%;
     grid-template-columns: 50% 50%;
     font-family: 'Orbitron';
-    /* border-top-left-radius: 50% 50px;  */
-      border-top-right-radius: 70% 120px;
+    border-bottom-left-radius: 50% 50px; 
+      border-top-right-radius: 50% 90px;
 }
 
 span{
