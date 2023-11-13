@@ -1,4 +1,6 @@
 <template>
+  <Header class="stick"/>
+  <Main class="mn"/>
   <section class="parallax" id="home">
     <div class="content">
       <h1>ComHouse</h1>
@@ -8,7 +10,13 @@
 </template>
   
 <script>
+import Header from '@/components/Header.vue';
+import Main from '@/components/Main.vue';
 export default {
+  components: {
+    Header,
+    Main
+  },
   data() {
     return {
       scrollPosition: 0,
@@ -52,4 +60,7 @@ export default {
 .content p {
   font-size: 1.5rem;
 }
+
+
+
 </style>

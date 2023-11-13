@@ -14,12 +14,6 @@
       </div>
     </div>
   </div>
-  <div class="main">
-    <img style="width: 30%; padding: 5% 35% ;" src="@/assets/logo_transparent.png" alt="">
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-  </div>
 </template>
 
 
@@ -47,13 +41,15 @@
   font-size: 1.5rem;
   /* background-color: aqua; */
   position: relative;
+  
 }
 
 .link {
-  color: rgb(25, 50, 160);
+  color: #0B409C;
   text-decoration: none;
   transition: .65s ease;
   font-family: 'Tektur', sans-serif;
+  letter-spacing: 1px;
 }
 
 ul {
@@ -70,9 +66,10 @@ li {
 .link:hover {
   color: rgb(253, 253, 253);
   font-size: 30px;
-  background-color: rgb(25, 50, 160);
+  background-color: #0B409C;
   border-radius: 5rem;
   padding: 10%;
+  letter-spacing: 0;
 }
 
 .drop {
@@ -80,7 +77,7 @@ li {
   top: -100px;
   transform: translateX(-50%);
   animation: dropAnimation 1.5s ease forwards;
-  width: 900px;
+  width: 800px;
   margin-left: 30%;
 }
 
@@ -90,38 +87,4 @@ li {
   }
 }
 
-.main{
-  background-color: rgb(25, 50, 160);
-  width:120%;
-  height: 700px;
-  margin-left: -10%;
-  
-}
-
-.bubble {
-  position: absolute;
-  width: 30px; /* Adjust bubble size */
-  height: 30px;
-  background-color: #fff; /* Adjust bubble color */
-  border-radius: 50%;
-  animation: moveBubbles 5s linear infinite; /* Adjust animation duration and timing function */
-}
-
-@keyframes moveBubbles {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(700px, -100px); /* Adjust the path of the bubble movement */
-  }
-  50% {
-    transform: translate(900px, 0);
-  }
-  75% {
-    transform: translate(200px, 100px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
 </style>
