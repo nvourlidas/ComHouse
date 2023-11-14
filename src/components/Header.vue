@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="logo">
-      <img class="logoimg" src="@/assets/cropped-logo_transparent-1.png" alt="">
+      <img class="logoimg" src="@/assets/logo_transparent.png" alt="">
     </div>
     <div class="menu">
       <div class="drop">
@@ -45,7 +45,7 @@
 }
 
 .link {
-  color: #0B409C;
+  color: white;
   text-decoration: none;
   transition: .65s ease;
   font-family: 'Tektur', sans-serif;
@@ -64,9 +64,9 @@ li {
 }
 
 .link:hover {
-  color: rgb(253, 253, 253);
+  color: #0B409C;
   font-size: 30px;
-  background-color: #0B409C;
+  background-color: white;
   border-radius: 5rem;
   padding: 10%;
   letter-spacing: 0;
