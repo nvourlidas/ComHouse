@@ -5,7 +5,7 @@
   <div v-else class="home fadeIn">
     <Header class="stick" :style="{ backgroundColor: headerBackgroundColor }" />
     <Main class="mn" />
-
+    <Main2/>
     <section class="parallax" id="home">
       <div class="content">
         <h1>ComHouse</h1>
@@ -18,11 +18,13 @@
 <script>
 import Header from '@/components/Header.vue';
 import Main from '@/components/Main.vue';
+import Main2 from '@/components/Main2.vue';
 import Loader from '@/components/Loader.vue';
 export default {
   components: {
     Header,
     Main,
+    Main2,
     Loader
   },
   data() {

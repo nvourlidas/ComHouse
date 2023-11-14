@@ -20,13 +20,13 @@
         </div>
         <div class="item item3">
             <span v-for="(letter, index) in text1" :key="index" class="letter2"
-                :style="{ animationDelay: `${index * 0.1}s` }">
+                :style="{ animationDelay: `${index * 0.2}s` }">
                 {{ letter }}
             </span>
         </div>
         <div class="item item4">
             <span v-for="(letter, index) in text" :key="index" class="letter1"
-                :style="{ animationDelay: `${index * 0.5}s` }">
+                :style="{ animationDelay: `${index * 0.1}s` }">
                 {{ letter }}
             </span>
         </div>
