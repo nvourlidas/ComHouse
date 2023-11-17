@@ -1,20 +1,46 @@
 <template>
   <div class="header">
     <div class="logo">
-      <img class="logoimg" src="@/assets/logo_transparent.png" alt="">
+      <!-- <img class="logoimg" src="@/assets/logo_transparent.png" alt=""> -->
     </div>
     <div class="menu">
-      <div class="drop">
-        <ul>
-          <li><router-link to="/" class="link">Αρχική</router-link></li>
-          <li><router-link to="/" class="link">Προϊόντα</router-link></li>
-          <li><router-link to="/" class="link">Μηχανογράφιση</router-link></li>
-          <li><router-link to="/" class="link">Επικοινωνία</router-link></li>
-        </ul>
-      </div>
+      
     </div>
   </div>
 </template>
+
+<script>
+import DropOne from './DropOne.vue';
+
+
+export default {
+  components: {
+    DropOne,
+  },
+
+  data(){
+    return {
+      isDropdownVisible: false,
+      vis: false
+    }
+  },
+
+  methods:{
+    showDropdown() {
+      this.isDropdownVisible = true;
+    },
+    hideDropdown() {
+      this.isDropdownVisible = false;
+    },
+    showDropdown1() {
+      this.vis = true;
+    },
+    hideDropdown1() {
+      this.vis = false;
+    },
+  }
+}
+</script>
 
 
 
@@ -86,5 +112,16 @@ li {
     top: 20%;
   }
 }
+
+.dropdown {
+  display: inline-block;
+  position: absolute;
+  margin-top:10%;
+  margin-left: 45%;
+  padding-right: 8px;
+}
+
+
+
 
 </style>

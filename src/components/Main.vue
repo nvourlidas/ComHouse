@@ -38,7 +38,7 @@ export default {
     data() {
         return {
             text: 'Καλώς Ήρθατε',
-            text1: 'στον Κόσμο της Τεχνολογίας'
+            text1: 'στο Σπίτι της Τεχνολογίας'
         }
     }
 }
@@ -190,9 +190,9 @@ export default {
     color: white;
     margin: 0 15px;
     line-height: .3;
-    text-shadow: 0 0 2px rgba(0, 0, 0, .45);
+    /* text-shadow: 0 0 2px rgba(0, 0, 0, .45); */
     margin: 2px;
-    margin-bottom: -30%;
+    margin-bottom: -40%;
     transition: transform 0.3s ease;
     cursor: pointer; 
 }
@@ -214,9 +214,9 @@ export default {
     color: white;
     margin: 0 15px;
     line-height: .3;
-    text-shadow: 0 0 2px rgba(0, 0, 0, .45);
+    /* text-shadow: 0 0 2px rgba(0, 0, 0, .45); */
     margin: 2px;
-    margin-top: -30%;
+    margin-top: -40%;
     transition: transform 0.3s ease;
     cursor: pointer;
 }

@@ -3,9 +3,10 @@
     <Loader />
   </div>
   <div v-else class="home fadeIn">
+    <Menu />
     <Header class="stick" :style="{ backgroundColor: headerBackgroundColor }" />
     <Main class="mn" />
-    <Main2/>
+    <Main2 class="orb"/>
     <section class="parallax" id="home">
       <div class="content">
         <h1>ComHouse</h1>
@@ -20,12 +21,15 @@ import Header from '@/components/Header.vue';
 import Main from '@/components/Main.vue';
 import Main2 from '@/components/Main2.vue';
 import Loader from '@/components/Loader.vue';
+import Menu from '@/components/menu.vue';
+
 export default {
   components: {
     Header,
     Main,
     Main2,
-    Loader
+    Loader,
+    Menu
   },
   data() {
     return {
@@ -77,12 +81,7 @@ export default {
   font-size: 1.5rem;
 }
 
-.stick {
-  position: fixed;
-  top: 0;
-  transition: background-color 0.3s ease;
-  width: 100%;
-}
+
 
 .loading-spinner {
   /* Style your loading spinner here */
@@ -91,8 +90,8 @@ export default {
   justify-content: center;
   height: 100vh;
   font-size: 1.5rem;
-  -webkit-animation-duration: 10s;
-  animation-duration: 20s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 30s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -134,5 +133,6 @@ export default {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
+
 
 </style>

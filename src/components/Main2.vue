@@ -1,7 +1,6 @@
 <template>
     <div class="main">
   <div class="wrapper"></div>
-<!--!!!! LEFT white line from external iframe, sorry for it!!-->
   <div id="z1" class="wrapper"></div>
   <div id="z2" class="wrapper"></div>
 
@@ -27,15 +26,15 @@
   }
   .hole{
   position:absolute;
-  top:calc(50% - 25px);
-  left:calc(50% - 25px);
+  top:calc(39% - 25px);
+  left:calc(73.4% - 25px);
   z-index:2000;
   }
   .hole i{
   display:block;
   position:absolute;
-  width:150px;
-  height:150px;
+  width:200px;
+  height:200px;
   left:-50px;
   top:-50px;
   /*border-radius*/
