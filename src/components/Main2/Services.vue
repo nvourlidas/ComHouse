@@ -79,7 +79,7 @@ export default {
   top: 0;
   width: 100%;
   height: 5px;
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  background: linear-gradient(-45deg, #297cf8 0%, #0B409C 100% );
   z-index: -1;
   transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
@@ -143,7 +143,7 @@ export default {
   top: 0;
   width: 100%;
   height: 5px;
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  background: linear-gradient(-45deg, #297cf8 0%, #0B409C 100% );
   z-index: -1;
   transition: all 0.9s cubic-bezier(0.23, 1, 0.320, 1);
 }

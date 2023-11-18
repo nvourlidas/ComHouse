@@ -41,7 +41,7 @@ h1{
     margin-top: 10%;
  width: 80%;
  height: 150%;
- background: rgb(46, 44, 44);
+ background: linear-gradient(-45deg, #297cf8 0%, #0B409C 100% );
  transition: all 300ms;
  padding: 5%;
  z-index: 2;
@@ -49,7 +49,7 @@ h1{
 }
 
 .item1:hover{
-    opacity: 0.6;
+    opacity: 0.8;
  transform: scale(1.20);
  
 }
