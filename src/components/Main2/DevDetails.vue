@@ -38,15 +38,15 @@
 }
 
 .cards .red {
-    background-color: #007e9e;
+    background: linear-gradient(-45deg, #297cf8 0%, #0B409C 100% );
 }
 
 .cards .blue {
-    background-color: #0062ff;
+    background: linear-gradient(-45deg, #297cf8 0%, #0B409C 100% );
 }
 
 .cards .green {
-    background-color: #098d3c;
+    background: linear-gradient(-45deg, #297cf8 0%, #0B409C 100% );
 }
 
 .cards .card {
