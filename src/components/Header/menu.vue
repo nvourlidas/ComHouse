@@ -1,16 +1,48 @@
 <template>
-    <input type="checkbox" id="menu-toggle"/>
+    <input type="checkbox" id="menu-toggle" @click="vis1 = false, vis2=false"/>
   <label id="trigger" for="menu-toggle"></label>
   <label id="burger" for="menu-toggle"></label>
   <ul id="menu">
     <li><router-link to="/"><i class="fas fa-home" style="margin-right: 10px;"></i>Αρχική</router-link></li>
-    <li><router-link to="/"><i class="fa fa-television" aria-hidden="true" style="margin-right: 10px;"></i>Προϊόντα</router-link></li>
-    <li><router-link to="/"><i class="fa fa-barcode" aria-hidden="true" style="margin-right: 10px;"></i>Μηχανογράφιση</router-link></li>
+    <li><router-link to="/" @click="appear(1)"><i class="fa fa-television" aria-hidden="true" style="margin-right: 10px;"></i>Προϊόντα</router-link></li>
+        <DropOne class="drop1" v-if="vis1" />
+    <li><router-link to="/" @click="appear(2)"><i class="fa fa-barcode" aria-hidden="true" style="margin-right: 10px;"></i>Μηχανογράφιση</router-link></li>
+        <DropTwo class="drop1" v-if="vis2" />
     <li><router-link to="/"><i class="fa fa-phone" aria-hidden="true" style="margin-right: 10px;"></i>Επικοινωνία</router-link></li>
   </ul>
 </template>
 
-<style>
+<script>
+import DropOne from "./DropOne.vue"
+import DropTwo from "./DropTwo.vue"
+
+export default {
+    components:{
+        DropOne,
+        DropTwo
+    },
+    data(){
+        return {
+            vis1: false,
+            vis2: false,
+        }
+    },
+
+    methods: {
+        appear(n){
+            if(n==1){
+                this.vis1 = !this.vis1
+                this.vis2 = false
+            }else{
+                this.vis2 = !this.vis2
+                this.vis1 = false
+            }
+        }
+    }
+}
+</script>
+
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Tektur&family=Ubuntu&display=swap');
 
 @keyframes checked-anim {
@@ -35,7 +67,7 @@
 li, a {
     margin: 75px 0 -55px 0;
     color: #0B409C;
-    font: 20px "Tektur", sans-serif;
+    font: 23px "Tektur", sans-serif;
     font-weight: 700;
     line-height: 1.8;
     text-decoration: none;
@@ -50,14 +82,23 @@ li {
     width: 230px;
     text-indent: 56px;
 }
+
 a{
     display: flex;
+    transition: text-shadow 0.3s ease;
+}
+
+a:hover {
+    text-shadow: 0 0 2px #0B409C;
 }
 a:focus {
     display: block;
     color: #333;
-    background-color: #eee;
+    /* background-color: #eee; */
     transition: all .5s;
+    border-bottom: 2px solid #302929;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 12%;
 }
 
 
@@ -126,4 +167,10 @@ a:focus {
 [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
     display: none;
 }
+
+.drop1{
+    margin-top: 10%;
+    margin-left: 29%;
+}
+
 </style>
