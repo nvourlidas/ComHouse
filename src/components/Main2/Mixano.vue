@@ -57,5 +57,7 @@ h1{
 
 .item2{
     grid-column-start: 2;
+    margin-left: 20%;
+    margin-top: 10%;
 }
 </style>

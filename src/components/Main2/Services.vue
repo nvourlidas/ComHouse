@@ -72,7 +72,7 @@ export default {
   padding: 32px;
   overflow: hidden;
   border-radius: 10px;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 1s cubic-bezier(0.23, 1, 0.320, 1);
   position: relative;
 }
 
@@ -85,7 +85,7 @@ export default {
   height: 5px;
   background: linear-gradient(-45deg, #297cf8 0%, #0B409C 100% );
   z-index: -1;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 1s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .item1:hover::before {
@@ -128,7 +128,7 @@ export default {
   padding: 32px;
   overflow: hidden;
   border-radius: 10px;
-  transition: all 0.9s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 1s cubic-bezier(0.23, 1, 0.320, 1);
   position: relative;
 }
 .content {

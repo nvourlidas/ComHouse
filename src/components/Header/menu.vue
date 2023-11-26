@@ -66,7 +66,7 @@ export default {
 li, a {
     margin: 75px 0 -55px 0;
     color: #0B409C;
-    font: 23px "Tektur", sans-serif;
+    font: 24px "Tektur", sans-serif;
     font-weight: 700;
     line-height: 1.8;
     text-decoration: none;
@@ -78,7 +78,7 @@ li, a {
     margin-left: 10%;
 }
 li {
-    width: 230px;
+    width: 50%;
     text-indent: 56px;
 }
 
@@ -95,9 +95,6 @@ a:focus {
     color: #333;
     /* background-color: #eee; */
     transition: all .5s;
-    border-bottom: 2px solid #302929;
-    border-bottom-left-radius: 40%;
-    border-bottom-right-radius: 12%;
 }
 
 
@@ -170,6 +167,34 @@ a:focus {
 .drop1{
     margin-top: 10%;
     margin-left: 29%;
+}
+
+@media screen and (min-width: 1501px) {
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        margin: 0; padding: 0;
+        width: 40%;
+        height: 110px;
+        background-color: #fff;
+        border-bottom-right-radius: 100%;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+        animation: not-checked-anim .5s both;
+        transition: .5s;
+    }
+
+    li, a {
+        margin: 2%;
+        font-size: 2.6rem;
+    }
+
+    .drop1{
+    margin: 0;
+}
+
 }
 
 </style>

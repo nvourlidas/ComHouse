@@ -3,7 +3,7 @@
         <div class="item item1">
             <div class="container">
                 <div class="circle"></div>
-                <img style="width: 100%; padding-top: 70%; display: block;" src="@/assets/head2.png" alt="">
+                <img  src="@/assets/head2.png" alt="">
             </div>
         </div>
         <div class="item item2">
@@ -58,6 +58,12 @@ export default {
     font-family: 'Orbitron';
     border-bottom-left-radius: 50% 50px;
     /* border-top-right-radius: 50% 90px; */
+}
+
+img{
+    width: 100%; 
+    padding-top: 70%; 
+    display: block;
 }
 
 .com {
@@ -228,6 +234,54 @@ export default {
 
     to {
         opacity: 1;
+    }
+}
+
+@media screen and (min-width: 1501px) {
+    .letter1 {
+        font-size: 7rem;
+    }
+
+    .letter2 {
+        font-size: 5rem;
+    }
+
+    @keyframes drawCircle {
+        to {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    img{
+        width: 200%;
+        margin-left: -50%;
+        margin-bottom: -35%;
+        
+    }
+
+    .com{
+        font-size: 6rem;
+    }
+
+    .letter{
+        height: 4.5rem;
+        width: 200px;
+        border: 7px solid white;
+        border-radius: 50px;
+    }
+
+    @keyframes letter {
+
+        0%,
+        30% {
+            width: 70px;
+        }
+
+        70%,
+        100% {
+            width: 20vw;
+        }
     }
 }
 </style>

@@ -40,4 +40,10 @@ ul {
   list-style: none;
 }
 
+@media screen and (min-width: 1601px)  {
+  .main {
+    font-size: 2rem;
+  }
+}
+
 </style>

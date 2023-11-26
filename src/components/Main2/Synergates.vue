@@ -53,8 +53,13 @@
     position: relative;
     width: 960px;
     margin-bottom: 10%;
+    transition: all 0.5s;
 }
 
+.slider:hover{
+    box-shadow: 30px 30px 30px 30px rgba(0, 0, 0, 0.178);
+
+}
 
 .slider::before,
 .slider::after {
@@ -86,7 +91,14 @@
 .slide {
     height: 100px;
     width: 250px;
-    margin-right: 1%;
+    margin-right: 2%;
+}
+
+
+@media screen and (min-width: 1501px){
+    .slider {
+        width: 70%;
+    }
 }
 
 </style>
