@@ -35,14 +35,18 @@
         </div>
     </div>
     <Mixano />
+    <h1 style="margin-left: 40%; font: 2rem  'Tektur'; margin-top: 15%; color: #0B409C;">Επίσημοι Συνεργάτες</h1>
+    <Synergates />
 </template>
 
 <script>
 import Mixano from "./Mixano.vue"
+import Synergates from "./Synergates.vue"
 
 export default {
     components:{
-        Mixano
+        Mixano,
+        Synergates
     }
 }
 </script>

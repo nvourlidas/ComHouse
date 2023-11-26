@@ -27,6 +27,7 @@
     <DevDetails />
     <h1 style="margin-left: 40%; font: 2rem 'Tektur'; margin-top: 10%; color: #0B409C;">Υπηρεσίες</h1>
     <Services />
+    <Footer />
   </div>
 </template>
   
@@ -39,6 +40,7 @@ import Menu from '@/components/Header/menu.vue';
 import WebDev from '@/components/Main2/WebDev.vue';
 import DevDetails from '@/components/Main2/DevDetails.vue';
 import Services from '@/components/Main2/Services.vue';
+import Footer from '@/components/Footer/Footer.vue';
 
 export default {
   components: {
@@ -49,7 +51,8 @@ export default {
     Menu,
     WebDev,
     DevDetails,
-    Services
+    Services,
+    Footer
   },
   data() {
     return {

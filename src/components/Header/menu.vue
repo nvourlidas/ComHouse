@@ -46,10 +46,6 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Tektur&family=Ubuntu&display=swap');
 
 @keyframes checked-anim {
-    50% {
-        width: 100%;
-        height: 100%;
-    }
     100% {
         width: 50%;
         height: 100%;
@@ -60,8 +56,11 @@ export default {
 }
 @keyframes not-checked-anim {
     0% {
-        width: 3000px;
-        height: 3000px;
+        width: 50%;
+        height: 100%;
+        border-radius: 0;
+        border-bottom-right-radius: 30%;
+        z-index: 1;
     }
 }
 li, a {
@@ -155,11 +154,11 @@ a:focus {
     background-color: #fff;
     border-bottom-right-radius: 100%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-    animation: not-checked-anim .2s both;
-    transition: .2s;
+    animation: not-checked-anim .5s both;
+    transition: .5s;
 }
 #menu-toggle:checked + #trigger + #burger + #menu {
-    animation: checked-anim 1s ease both;
+    animation: checked-anim .6s ease both;
 }
 #menu-toggle:checked + #trigger ~ #menu > li, a {
     display: block;
